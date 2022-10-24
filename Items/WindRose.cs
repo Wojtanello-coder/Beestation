@@ -14,7 +14,7 @@ namespace BeeStation.Items
 
 		public override void SetDefaults()
 		{
-			Item.damage = 50;
+			Item.damage = 1;
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 20;
 			Item.height = 20;
@@ -30,10 +30,10 @@ namespace BeeStation.Items
 
 		public override void AddRecipes()
 		{
-			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.SandBlock, 10);
-			recipe.AddTile(TileID.WaterDrip);
-			recipe.Register();
+			//Recipe recipe = CreateRecipe();
+			//recipe.AddIngredient(ItemID.SandBlock, 10);
+			//recipe.AddTile(TileID.WaterDrip);
+			//recipe.Register();
 		}
 	}
 }
