@@ -122,9 +122,6 @@ namespace BeeStation.Enemies
 		}
 
 
-		WorldGen.BroadcastText(NetworkText.FromLiteral(NPC.ai[0].ToString() + ", " + NPC.ai[1].ToString() + ", " + NPC.ai[2].ToString() + ", " + NPC.ai[3].ToString()), Color.Cyan);
-
-
 		NPC.ai[0] = NPC.Center.X;
 	  }
     }
