@@ -1,5 +1,0 @@
-C:\Users\Wojtek Jankowski\Documents\My Games\Terraria\tModLoader\ModSources\BeeStation\obj\Debug\net5.0\BeeStation.csproj.AssemblyReference.cache
-C:\Users\Wojtek Jankowski\Documents\My Games\Terraria\tModLoader\ModSources\BeeStation\obj\Debug\net5.0\BeeStation.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Wojtek Jankowski\Documents\My Games\Terraria\tModLoader\ModSources\BeeStation\obj\Debug\net5.0\BeeStation.AssemblyInfoInputs.cache
-C:\Users\Wojtek Jankowski\Documents\My Games\Terraria\tModLoader\ModSources\BeeStation\obj\Debug\net5.0\BeeStation.AssemblyInfo.cs
-C:\Users\Wojtek Jankowski\Documents\My Games\Terraria\tModLoader\ModSources\BeeStation\obj\Debug\net5.0\BeeStation.csproj.CoreCompileInputs.cache

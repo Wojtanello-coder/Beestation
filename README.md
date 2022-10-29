@@ -5,4 +5,4 @@ Mod generally based on bees, but also steampunk. **Work in progress...**
 
 ### Current adds:
 > * 4 Healing Weapons
-> * 1 Enemy
+> * 2 Enemy
