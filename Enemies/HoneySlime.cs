@@ -20,7 +20,7 @@ namespace BeeStation.Enemies
 	  public override void SetDefaults()
 	  {
 		NPC.width = 32;
-		NPC.height = 15;
+		NPC.height = 20;
 		NPC.damage = 12;
 		NPC.defense = 3;
 		NPC.lifeMax = 80;
