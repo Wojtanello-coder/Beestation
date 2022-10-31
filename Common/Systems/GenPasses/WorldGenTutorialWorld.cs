@@ -37,9 +37,9 @@ namespace WorldGenTutorial
 
 		// Code to test placed here:
 		//WorldGen.TileRunner(x + xx, y + yy, 5, 5, TileID.Dirt, true);
-
 		Point point = new Point(x, y);
-		WorldUtils.Gen(point, new Shapes.Tail(5, new Vector2(WorldGen.genRand.Next(-10, 10), WorldGen.genRand.Next(15, 30))), new Actions.SetTile(TileID.Dirt));
+		WorldUtils.Gen(point, new Shapes.Rectangle(1, 1), new Actions.SetTile(TileID.Dirt));
+		//WorldUtils.Gen(point, new Shapes.Tail(5, new Vector2(WorldGen.genRand.Next(-10, 10), WorldGen.genRand.Next(15, 30))), new Actions.SetTile(TileID.Dirt));
 	  }
     }
 }
