@@ -50,6 +50,15 @@ namespace BeeStation.Enemies
 	  //{
 
 	  //}
+	  public override float SpawnChance(NPCSpawnInfo spawnInfo)
+	  {
+		if (spawnInfo.Player.ZoneHive)
+		{
+		    return 1f;
+		}
+		return 0f;
+		
+	  }
 	  public override void OnSpawn(IEntitySource source)
 	  {
 		NPC.ai[0] = NPC.Center.X; // Previous frame X
