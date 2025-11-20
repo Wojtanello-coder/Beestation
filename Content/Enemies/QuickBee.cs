@@ -8,13 +8,13 @@ using System;
 using Microsoft.Xna.Framework;
 using Terraria.DataStructures;
 
-namespace BeeStation.Enemies
+namespace BeeStation.Content.Enemies
 {
     public class QuickBee : ModNPC
     {
 	  public override void SetStaticDefaults()
 	  {
-		DisplayName.SetDefault("Quick Bee");
+		// DisplayName.SetDefault("Quick Bee");
 		Main.npcFrameCount[NPC.type] = Main.npcFrameCount[4];
 	  }
 
@@ -101,11 +101,11 @@ namespace BeeStation.Enemies
 
 
 		//Velocity
-		if (((targetPos.X > NPC.Center.X && NPC.ai[2]==0) || (targetPos.X < NPC.Center.X && NPC.ai[2] == 1)) && NPC.velocity.X < 6f)
+		if ((targetPos.X > NPC.Center.X && NPC.ai[2]==0 || targetPos.X < NPC.Center.X && NPC.ai[2] == 1) && NPC.velocity.X < 6f)
 		{
 		    NPC.velocity.X += 0.2f;
 		}
-		if (((targetPos.X < NPC.Center.X && NPC.ai[2]==0) || (targetPos.X > NPC.Center.X && NPC.ai[2] == 1)) && NPC.velocity.X > -6f)
+		if ((targetPos.X < NPC.Center.X && NPC.ai[2]==0 || targetPos.X > NPC.Center.X && NPC.ai[2] == 1) && NPC.velocity.X > -6f)
 		{
 		    NPC.velocity.X -= 0.2f;
 		}

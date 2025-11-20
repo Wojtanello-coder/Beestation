@@ -8,7 +8,7 @@ namespace BeeStation.Common.Systems
 {
     class WorldSystem : ModSystem
     {
-	  public override void ModifyWorldGenTasks(List<GenPass> tasks, ref float totalWeight)
+	  public override void ModifyWorldGenTasks(List<GenPass> tasks, ref double totalWeight)
 	  {
 		int ShiniesIndex = tasks.FindIndex(t => t.Name.Equals("Shinies"));
 		if(ShiniesIndex != -1)

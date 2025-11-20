@@ -1,0 +1,36 @@
+NPCs: {
+	QuickBee.DisplayName: Quick Bee
+	HoneySlime.DisplayName: Honey Slime
+}
+
+Items: {
+	SweetStick: {
+		Tooltip: ""
+		DisplayName: Sweet Stick
+	}
+
+	SweetIcicle: {
+		Tooltip: ""
+		DisplayName: Sweet Icicle
+	}
+
+	HoneyStick: {
+		Tooltip: ""
+		DisplayName: Honey Stick
+	}
+
+	DarkHoneyStick: {
+		Tooltip: ""
+		DisplayName: Dark Honey Stick
+	}
+
+	WaspmatMask: {
+		DisplayName: Waspmat Mask
+		Tooltip: ""
+	}
+
+	TemperedComb: {
+		DisplayName: Tempered Comb
+		Tooltip: ""
+	}
+}

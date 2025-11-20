@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32929.386
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeeStation", "BeeStation.csproj", "{865523E4-9EA0-4DBC-8E68-4807E9EA5C25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeeStation", "BeeStation.csproj", "{CADFB0D1-9F6B-4D6A-8392-31FA70E95B4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{865523E4-9EA0-4DBC-8E68-4807E9EA5C25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{865523E4-9EA0-4DBC-8E68-4807E9EA5C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{865523E4-9EA0-4DBC-8E68-4807E9EA5C25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{865523E4-9EA0-4DBC-8E68-4807E9EA5C25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADFB0D1-9F6B-4D6A-8392-31FA70E95B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADFB0D1-9F6B-4D6A-8392-31FA70E95B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADFB0D1-9F6B-4D6A-8392-31FA70E95B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADFB0D1-9F6B-4D6A-8392-31FA70E95B4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {CDC8B678-40A7-476A-AB92-904AC51B254D}
+		SolutionGuid = {D86FACD3-8D30-40D1-B0A9-FBAC427FC7CA}
 	EndGlobalSection
 EndGlobal

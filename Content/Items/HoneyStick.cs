@@ -3,15 +3,15 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using System;
 
-namespace BeeStation.Items
+namespace BeeStation.Content.Items
 {
     public class HoneyStick : ModItem
     {
-	  public override void SetStaticDefaults()
-	  {
-		DisplayName.SetDefault("Honey on a Stick"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+	  // public override void SetStaticDefaults()
+	  // {
+		//DisplayName.SetDefault("Honey on a Stick"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
 		//Tooltip.SetDefault("");
-	  }
+	  // }
 
 	  public override void SetDefaults()
 	  {
@@ -25,7 +25,7 @@ namespace BeeStation.Items
 		Item.useStyle = ItemUseStyleID.Shoot;
 		Item.knockBack = 6;
 		Item.value = 1400;
-		Item.rare = 2;
+		Item.rare = ItemRarityID.Green;
 		Item.UseSound = SoundID.Item54;
 		Item.autoReuse = true;
 	  }

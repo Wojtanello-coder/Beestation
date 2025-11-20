@@ -145,7 +145,7 @@ namespace BeeStation.Common.Systems.GenPasses
 					  itemsToAdd.Add((ItemID.SweetheartNecklace, 1));
 					  break;
 				    case 4:
-					  itemsToAdd.Add((ModContent.ItemType<Items.SweetStick>(), 1));
+					  itemsToAdd.Add((ModContent.ItemType<Content.Items.SweetStick>(), 1));
 					  break;
 				}
 				switch (Main.rand.Next(6))
