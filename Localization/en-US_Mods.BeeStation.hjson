@@ -1,6 +1,8 @@
 NPCs: {
 	QuickBee.DisplayName: Quick Bee
 	HoneySlime.DisplayName: Honey Slime
+	StellarBeeGuardian.DisplayName: Stellar Bee Guardian
+	StellarBee.DisplayName: Stellar Bee
 }
 
 Items: {
