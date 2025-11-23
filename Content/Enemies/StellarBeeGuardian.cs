@@ -30,7 +30,7 @@ namespace BeeStation.Content.Enemies
         }
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            return 0f;
+            return 0.01f;
 
         }
         public override void OnSpawn(IEntitySource source)
