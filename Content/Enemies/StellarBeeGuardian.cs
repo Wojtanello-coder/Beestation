@@ -1,11 +1,14 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Terraria;
+using Terraria.Chat;
 using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 
 namespace BeeStation.Content.Enemies
@@ -27,6 +30,7 @@ namespace BeeStation.Content.Enemies
             NPC.value = 2850f;
             NPC.HitSound = SoundID.NPCHit1;
             NPC.DeathSound = SoundID.NPCDeath1;
+            NPC.rarity = 4;
         }
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
@@ -46,6 +50,7 @@ namespace BeeStation.Content.Enemies
                 NPC.ai[0] = 360 * (float)Math.PI / 7;
                 NPC.ai[1]++;
                 NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<StellarBee>(), 0, NPC.whoAmI);
+                ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(NPC.whoAmI.ToString()),Color.Aqua);
             }
             if (NPC.ai[0] > 0) NPC.ai[0]--;
         }

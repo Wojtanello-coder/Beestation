@@ -35,8 +35,8 @@ namespace BeeStation.Content.Enemies
         }
         public override void OnSpawn(IEntitySource source)
         {
-            NPC.ai[0] = 400; // Floating distance
-            NPC.ai[1] = 0; 
+            //sNPC.ai[0] = 0; // parent NPC number
+            NPC.ai[1] = 400; // Floating distance
             NPC.ai[2] = 0;
             NPC.ai[3] = 0;
         }
@@ -52,8 +52,8 @@ namespace BeeStation.Content.Enemies
                 Microsoft.Xna.Framework.Vector2 following = FollowingNPC.Center;
 
                 NPC.rotation += 1f / 60;
-                following.X += (float)Math.Sin(NPC.rotation) * NPC.ai[0];
-                following.Y -= (float)Math.Cos(NPC.rotation) * NPC.ai[0];
+                following.X += (float)Math.Sin(NPC.rotation) * NPC.ai[1];
+                following.Y -= (float)Math.Cos(NPC.rotation) * NPC.ai[1];
                 if (NPC.Center.X > following.X) NPC.velocity.X += (following.X - NPC.Center.X) / 10;
                 if (NPC.Center.X < following.X) NPC.velocity.X += (following.X - NPC.Center.X) / 10;
                 if (NPC.Center.Y > following.Y) NPC.velocity.Y += (following.Y - NPC.Center.Y) / 10;
