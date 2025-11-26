@@ -18,7 +18,6 @@ namespace BeeStation.Content.Enemies
 {
     internal class StellarBeeGuardian : ModNPC
     {
-        public static int zodiacSign;
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[NPC.type] = 3;
@@ -48,19 +47,13 @@ namespace BeeStation.Content.Enemies
             NPC.ai[2] = 0; 
             NPC.ai[3] = 0;
         }
-        public override void LoadData(TagCompound tag)
-        {
-            Console.Write($"[SBG] Previous sign was {zodiacSign}. ");
-            zodiacSign = tag.GetInt("ZodiacSign");
-            Console.WriteLine($" Current is {zodiacSign}. ");
-        }
         public override void AI()
         {
             if (Main.player[NPC.FindClosestPlayer()].Distance(NPC.Center) < 320f && NPC.ai[0] <= 0 && NPC.ai[1] < 7) {
                 NPC.ai[0] = 360 * (float)Math.PI / 7;
                 NPC.ai[1]++;
                 NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<StellarBee>(), 0, NPC.whoAmI);
-                ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(WorldSystem.zodiacSign.ToString()),Color.Aqua);
+                //ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(WorldSystem.zodiacSign.ToString()),Color.Aqua);
             }
             if (NPC.ai[0] > 0) NPC.ai[0]--;
         }

@@ -15,7 +15,6 @@ namespace BeeStation
 	{
         public override void Load()
         {
-            Console.WriteLine("I was here!!!");
             //foreach (var m in ModLoader.Mods)
             //{
             //    Console.WriteLine(m.Name);
