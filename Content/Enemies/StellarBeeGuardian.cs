@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using BeeStation.Common.Systems;
+using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,13 +9,16 @@ using Terraria;
 using Terraria.Chat;
 using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.IO;
 using Terraria.Localization;
 using Terraria.ModLoader;
+using Terraria.ModLoader.IO;
 
 namespace BeeStation.Content.Enemies
 {
     internal class StellarBeeGuardian : ModNPC
     {
+        public static int zodiacSign;
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[NPC.type] = 3;
@@ -34,7 +38,7 @@ namespace BeeStation.Content.Enemies
         }
         public override float SpawnChance(NPCSpawnInfo spawnInfo)
         {
-            return 0.01f;
+            return 0.1f;
 
         }
         public override void OnSpawn(IEntitySource source)
@@ -44,13 +48,19 @@ namespace BeeStation.Content.Enemies
             NPC.ai[2] = 0; 
             NPC.ai[3] = 0;
         }
+        public override void LoadData(TagCompound tag)
+        {
+            Console.Write($"[SBG] Previous sign was {zodiacSign}. ");
+            zodiacSign = tag.GetInt("ZodiacSign");
+            Console.WriteLine($" Current is {zodiacSign}. ");
+        }
         public override void AI()
         {
             if (Main.player[NPC.FindClosestPlayer()].Distance(NPC.Center) < 320f && NPC.ai[0] <= 0 && NPC.ai[1] < 7) {
                 NPC.ai[0] = 360 * (float)Math.PI / 7;
                 NPC.ai[1]++;
                 NPC.NewNPC(NPC.GetSource_FromAI(), (int)NPC.Center.X, (int)NPC.Center.Y, ModContent.NPCType<StellarBee>(), 0, NPC.whoAmI);
-                ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(NPC.whoAmI.ToString()),Color.Aqua);
+                ChatHelper.BroadcastChatMessage(NetworkText.FromLiteral(WorldSystem.zodiacSign.ToString()),Color.Aqua);
             }
             if (NPC.ai[0] > 0) NPC.ai[0]--;
         }
