@@ -13,7 +13,7 @@ namespace BeeStation.Common.Systems
 {
     class WorldSystem : ModSystem
     {
-        public string[] zodiacs = { "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces" };
+        public string[] zodiacs = { "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpius", "Sagittarius", "Capricorn", "Aquarius", "Pisces" };
         public static int zodiacSign;
 	  public override void ModifyWorldGenTasks(List<GenPass> tasks, ref double totalWeight)
 	  {
