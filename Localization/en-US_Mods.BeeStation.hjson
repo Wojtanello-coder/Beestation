@@ -35,4 +35,9 @@ Items: {
 		DisplayName: Tempered Comb
 		Tooltip: ""
 	}
+
+	WeirdMirror: {
+		Tooltip: ""
+		DisplayName: Weird Mirror
+	}
 }
