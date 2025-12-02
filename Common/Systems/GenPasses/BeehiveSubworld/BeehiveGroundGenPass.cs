@@ -16,7 +16,7 @@ namespace BeeStation.Common.Systems.GenPasses.BeehiveSubworld
 
         protected override void ApplyPass(GenerationProgress progress, GameConfiguration configuration)
         {
-            progress.Message = "Setting Some Ground Rules";
+            progress.Message = "Setting some ground rules";
             Main.worldSurface = Main.maxTilesY - 42;
             Main.rockLayer = Main.maxTilesY;
 
@@ -24,10 +24,13 @@ namespace BeeStation.Common.Systems.GenPasses.BeehiveSubworld
             {
                 for (int j = 0; j < Main.maxTilesY; j++)
                 {
-                    progress.Set(j + i * Main.maxTilesY / (float)(Main.maxTilesX * Main.maxTilesY));
-                    Tile tile = Main.tile[i, j];
-                    tile.HasTile = true;
-                    tile.TileType = TileID.Mud;
+                    progress.Set((j + i * Main.maxTilesY) / (float)(Main.maxTilesX * Main.maxTilesY));
+                    if (Math.Pow(i - Main.maxTilesX / 2, 4) + Math.Pow(Main.maxTilesX / Main.maxTilesY * j - Main.maxTilesX / 2, 4) < Math.Pow(Main.maxTilesX, 4) / 16)
+                    {
+                        Tile tile = Main.tile[i, j];
+                        tile.HasTile = true;
+                        tile.TileType = TileID.Mud;
+                    }
                 }
             }
         }

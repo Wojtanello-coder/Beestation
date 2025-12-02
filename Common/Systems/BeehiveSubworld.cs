@@ -17,9 +17,12 @@ namespace BeeStation.Common.Systems
         public override bool NoPlayerSaving => true;
         public override List<GenPass> Tasks => new List<GenPass>()
         {
-            new BeehiveGroundGenPass("Ground", 1f)
+            new BeehiveGroundGenPass("Ground", 1f),
+            new BeehiveCaveRoomGenPass("Caves", 3f)
         };
-
+        public override void OnEnter()
+        {
+        }
         
     }
 }
