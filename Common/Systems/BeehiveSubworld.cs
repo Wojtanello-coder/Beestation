@@ -18,7 +18,8 @@ namespace BeeStation.Common.Systems
         public override List<GenPass> Tasks => new List<GenPass>()
         {
             new BeehiveGroundGenPass("Ground", 1f),
-            new BeehiveCaveRoomGenPass("Caves", 3f)
+            new BeehiveCaveRoomGenPass("Caves", 1f),
+            new BeehiveGrassGenPass("Grass", 1f),
         };
         public override void OnEnter()
         {

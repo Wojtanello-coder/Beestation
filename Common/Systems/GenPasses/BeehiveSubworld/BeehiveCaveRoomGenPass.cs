@@ -34,6 +34,10 @@ namespace BeeStation.Common.Systems.GenPasses.BeehiveSubworld
                 {
                     progress.Set((w * Main.maxTilesY + h) / holes);
                     WorldGen.digTunnel(w + WorldGen.genRand.Next(50), h + WorldGen.genRand.Next(50) + (w%2)*25, WorldGen.genRand.Next(2) * 2 - 1, (WorldGen.genRand.Next(101) / 50 - 1) * 0.2, WorldGen.genRand.Next(40, 50), WorldGen.genRand.Next(5, 12));
+                    if(WorldGen.genRand.Next(10)==0)
+                    {
+                        WorldGen.digTunnel(w, h + (w % 2) * 25, 0, 1, WorldGen.genRand.Next(40, 50), WorldGen.genRand.Next(5, 6));
+                    }
                 }
             }
             for (int i = 0; i < holes / 100; i++)
