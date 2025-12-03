@@ -11,8 +11,8 @@ namespace BeeStation.Common.Systems
 {
     class BeehiveSubworld : Subworld
     {
-        public override int Width => 840;
-        public override int Height => 840;
+        public override int Width => 1840;
+        public override int Height => 1840;
         public override bool ShouldSave => false;
         public override bool NoPlayerSaving => true;
         public override List<GenPass> Tasks => new List<GenPass>()
